@@ -1,0 +1,10 @@
+{
+  "name": "samir_app",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "localhost:3000/api"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login_new.css">
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+  </head>
+  <body ng-app="starter" ng-controller="MainCtrl as mainCtrl" class="ng-cloak" ng-init="mainCtrl.init()">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content>
+        <div ui-view="" class="bg" ng-class="{'arabic-direction':currentLocale=='Arabic'}"></div>
+      </ion-content>
+    </ion-pane>
+
+    <!-- bower:js -->
+    <script src="lib/angular-cookie/angular-cookie.js"></script>
+    <script src="lib/ng-token-auth/dist/ng-token-auth.js"></script>
+    <script src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
+    <!-- endbower -->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="routes.js"></script>
+    <script src="js/main.ctrl.js"></script>
+    <script src="js/services/user.service.js"></script>
+    <script src="js/controllers/user_sessions.ctrl.js"></script>
+
+  </body>
+</html>

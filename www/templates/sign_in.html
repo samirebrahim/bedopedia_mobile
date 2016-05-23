@@ -1,0 +1,50 @@
+<style type="text/css">
+.pane {
+    background-image: url("img/login-bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color:transparent!important;
+}
+</style>
+<div class="login">
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="images/student/logo-bedopedia.svg" />
+            </div>
+            <div class="slogan">Actor-based Unified learning system</div>
+            <div class="text-danger">
+                {{error}}
+            </div>
+            <form name="userForm" ng-submit="submitLogin(loginForm)" novalidate role="form" ng-init="loginForm = {}">
+                <div class="form-login">
+                    <div class="" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine || error,'has-success': userForm.email.$valid && !error}">
+                        <label>Username </label>
+                        <input type="email" placeholder="Please Enter Your Username" class="form-input" name="email" id="email" ng-model="loginForm.email" required />
+                        <span class="validation"><i class="valid"></i> <i class="invalid"></i></span>
+                    </div>
+                </div>
+                <div class="form-login">
+                    <div class="" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine || error }">
+                        <label>Password</label>
+                        <input type="password" class="form-input" name="password" id="password" ng-model="loginForm.password" placeholder="Please Enter Your Password" required/>
+                        <span class="validation"><i class="valid"></i> <i class="invalid"></i></span>
+                    </div>
+                </div>
+                <div class="form-login  clearfix">
+                    <label class="f-l">
+                        <div class="squaredFour clickable">
+                            <input type="checkbox" value="None" id="squaredFour" name="check" />
+                            <label for="squaredFour"></label>
+                        </div>
+                        Keep me signed-in
+                    </label>
+                    <label class="f-r clickable">Forgot Your Password?</label>
+                </div>
+                <div>
+                    <button class="login-button " type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
