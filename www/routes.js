@@ -34,6 +34,19 @@ angular.module('starter')
           ]
         }
       })
+      .state('parent', {
+      url: '/parent',
+      templateUrl: 'templates/layout/parent_page_template.html',
+       data: {
+        roles: {
+          any: ["parent"]
+        }
+      }
+    })
+      .state('parent.home', {
+    url: '/home',
+    templateUrl: 'templates/Notification/home.html',
+   })
 
   }
 ]);

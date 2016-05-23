@@ -16,4 +16,19 @@ angular.module('starter').controller('MainCtrl',
       }
     }
 
+
+        $scope.$on('auth:login-success', function(ev, user) {
+            // console.log("---- login-success ----");
+            $scope.error = '';
+            User.get(user.id).success(function(response) {
+              User.setCurrentUser(response);
+              self.init();
+               User.goToDefaultPage();
+            });
+            // console.log("---- Exit login-success ----");
+          });
+          $scope.$on('auth:logout-success', function() {
+              User.logOut();
+            });
+
   });

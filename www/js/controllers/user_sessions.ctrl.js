@@ -10,6 +10,7 @@ angular.module('starter').controller('UserSessionsCtrl',
     ///// SIGN OUT /////////
     $scope.logOut = function() {
       // console.log("---inside logOut---");
+      console.log("Entered");
       $auth.signOut();
       User.setCurrentUser(User.guestUser);
       $scope.current_user = User.getCurrentUser();
@@ -18,6 +19,7 @@ angular.module('starter').controller('UserSessionsCtrl',
     }
 
     ///// END SIGN OUT //////
+
 
 
     ///// PASSWORD OPERATIONS //////
