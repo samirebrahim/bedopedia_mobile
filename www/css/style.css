@@ -1,1 +1,230 @@
 /* Empty. Add your own CSS if you like */
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+html,
+body {
+  height: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+b,
+strong {
+  font-weight: bold;
+}
+img {
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+ol,
+ul {
+  list-style: none;
+}
+li {
+  display: list-item;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+form,
+input,
+select,
+textarea,
+button {
+  outline: none;
+}
+.f-r {
+  float: right !important;
+}
+.none {
+  float: none!important;
+}
+.f-l {
+  float: left !important;
+}
+.imgcontain {
+  width: 100%;
+  height: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.inlin {
+  width: 100%;
+  display: inline-block;
+}
+.relative {
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+ 
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  .container {
+    padding: 0;
+  }
+}
+tspan {
+  text-decoration: none;
+  text-shadow: none !important;
+  font-family: 'Ubuntu';
+  font-weight: 100;
+}

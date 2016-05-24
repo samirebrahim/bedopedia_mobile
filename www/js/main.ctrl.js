@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter').controller('MainCtrl',
-  function($scope, User) {
+  function($scope, User,$auth,$state) {
     var self = this;
 
     self.init = function() {
@@ -15,6 +15,18 @@ angular.module('starter').controller('MainCtrl',
         User.setCurrentUser(User.guestUser);
       }
     }
+    ///// SIGN OUT /////////
+    $scope.logOut = function() {
+      // console.log("---inside logOut---");
+      console.log("Entered");
+      $auth.signOut();
+      User.setCurrentUser(User.guestUser);
+      $scope.current_user = User.getCurrentUser();
+      $state.go('sign_in');
+      // console.log("---Exit logOut---");
+    }
+
+    ///// END SIGN OUT //////
 
 
         $scope.$on('auth:login-success', function(ev, user) {
