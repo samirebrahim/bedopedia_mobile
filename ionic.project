@@ -4,7 +4,7 @@
   "proxies": [
     {
       "path": "/api",
-      "proxyUrl": "http://localhost:3000/api"
+      "proxyUrl": "http://bedopedia-staging.herokuapp.com/api"
     }
   ],
   "gulpStartupTasks": ["sass", "watch"]
