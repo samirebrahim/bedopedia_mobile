@@ -1,8 +1,5 @@
-angular.module('starter').factory('PushNotification',[
-  '$http',
-  '$state',
-  'User',
-  function($http,$state,User){
+angular.module('starter').factory('PushNotification',
+  function($http,$state,User,BASE_URL){
 
   var depUserSource;
   var PushNotification = {};
@@ -10,7 +7,7 @@ angular.module('starter').factory('PushNotification',[
   PushNotification.all = function (user_id, page, range) {
     if(!user_id) return;
     var params = {page: page, per_page: range};
-    return $http.get('/api/users/' + user_id + '/notifications', {
+    return $http.get(BASE_URL+'/users/' + user_id + '/notifications', {
       params: params
     });
   }
@@ -54,4 +51,4 @@ angular.module('starter').factory('PushNotification',[
   // }
 
   return PushNotification;
-}])
+})
