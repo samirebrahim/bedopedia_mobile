@@ -1,2 +1,22 @@
-<h1>Welcome To {{current_user.name}} Home</h1>
+<div class="box clearfix">
+    <div class="clearfix">
+      <div class="title">Notifications</div>
+     
+    </div>
+    <div class="items">
+      <div class="item clearfix" ng-repeat="notification in notifications | limitTo: notifications_limit">
+        <div class="clearfix">
+          <div class="time">{{notification.created_at | date: "yyyy-MM-dd h:mm:ss a"}}</div>
+        </div>
+        <div class="clearfix">
+          <div class="item-icon">
+            <img ng-src="../img/connect-ico.svg">
+          </div>
+          <p class="col_right_p">{{notification.message}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <button ng-click="logOut()">Log Out</button>

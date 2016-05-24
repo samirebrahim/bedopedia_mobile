@@ -37,6 +37,7 @@ angular.module('starter')
       .state('parent', {
       url: '/parent',
       templateUrl: 'templates/layout/parent_page_template.html',
+      controller: 'ParentNotificationCtrl',
        data: {
         roles: {
           any: ["parent"]
@@ -45,7 +46,7 @@ angular.module('starter')
     })
       .state('parent.home', {
     url: '/home',
-    templateUrl: 'templates/Notification/home.html',
+    templateUrl: 'templates/Notification/home.html'
    })
 
   }

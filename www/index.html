@@ -20,16 +20,19 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
     <link href="css/style.css" rel="stylesheet">
- 
+
   </head>
   <body ng-app="starter" ng-controller="MainCtrl as mainCtrl" class="ng-cloak" ng-init="mainCtrl.init()">
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+        <div class="logo">
+            <img src="img/logo-bedopedia.svg" />
+        </div>
+
       </ion-header-bar>
       <ion-content>
-        <div ui-view="" class="bg" ng-class="{'arabic-direction':currentLocale=='Arabic'}"></div>
+        <div ui-view=""></div>
       </ion-content>
     </ion-pane>
 
@@ -42,9 +45,11 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="routes.js"></script>
-    <script src="js/main.ctrl.js"></script>
     <script src="js/services/user.service.js"></script>
+    <script src="js/services/push_notification.service.js"></script>
     <script src="js/controllers/user_sessions.ctrl.js"></script>
+    <script src="js/controllers/parent_notification.ctrl.js"></script>
+    <script src="js/main.ctrl.js"></script>
 
   </body>
 </html>
