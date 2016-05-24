@@ -22,3 +22,8 @@ angular.module('starter', ['ionic', 'ng-token-auth','LocalStorageModule'])
     }
   });
 })
+.config(function($authProvider) {
+        $authProvider.configure({
+            apiUrl: 'http://bedopedia-staging.herokuapp.com'
+        });
+    });
