@@ -1,6 +1,6 @@
 'use strict';
 angular.module('starter')
-  .controller('ParentNotificationCtrl', ['$scope', 'PushNotification', 'User',
+  .controller('ActorNotificationCtrl', ['$scope', 'PushNotification', 'User',
     function($scope, PushNotification, User) {
 
       self = this;
